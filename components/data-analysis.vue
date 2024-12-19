@@ -47,11 +47,7 @@
     </div>
   </template>
   
-  <script>
-  export default {
-    name: "DataAnalysis",
-  };
-  </script>
+
   
   <style scoped>
   .data-analysis {

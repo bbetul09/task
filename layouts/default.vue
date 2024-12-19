@@ -106,7 +106,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import { NLayout, NLayoutHeader, NLayoutFooter, NLayoutContent, NIcon } from 'naive-ui';
+import { NLayout, NLayoutHeader, NLayoutFooter } from 'naive-ui';
 
 const showMobileMenu = ref(false)
 

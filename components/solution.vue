@@ -48,44 +48,40 @@
     </div>
 </template>
 
-<script>
-export default {
-    name: "ServicesSection",
-    data() {
-        return {
-            services: [
-                {
-                    icon: "flaticon-editing",
-                    title: "Easy Editable",
-                    description: "Duis cursus, mi quis viverra ornare eros dolor interdum nulla",
-                },
-                {
-                    icon: "flaticon-responsive",
-                    title: "Fully Responsive",
-                    description: "Duis cursus, mi quis viverra ornare eros dolor interdum nulla",
-                },
-                {
-                    icon: "flaticon-file",
-                    title: "Well Documentation",
-                    description: "Duis cursus, mi quis viverra ornare eros dolor interdum nulla",
-                },
-                {
-                    icon: "flaticon-server",
-                    title: "Server Solutions",
-                    description: "Duis cursus, mi quis viverra ornare eros dolor interdum nulla",
-                },
-                {
-                    icon: "flaticon-lightbulb",
-                    title: "Creative Design",
-                    description: "Duis cursus, mi quis viverra ornare eros dolor interdum nulla",
-                },
-                {
-                    icon: "flaticon-fast-delivery",
-                    title: "Quick Linkup",
-                    description: "Duis cursus, mi quis viverra ornare eros dolor interdum nulla",
-                },
-            ],
-        };
-    },
-};
+<script setup>
+import { ref } from 'vue';
+import { NCard } from 'naive-ui';
+
+const services = ref([
+  {
+    icon: "flaticon-editing",
+    title: "Easy Editable",
+    description: "Duis cursus, mi quis viverra ornare eros dolor interdum nulla",
+  },
+  {
+    icon: "flaticon-responsive",
+    title: "Fully Responsive",
+    description: "Duis cursus, mi quis viverra ornare eros dolor interdum nulla",
+  },
+  {
+    icon: "flaticon-file",
+    title: "Well Documentation",
+    description: "Duis cursus, mi quis viverra ornare eros dolor interdum nulla",
+  },
+  {
+    icon: "flaticon-server",
+    title: "Server Solutions",
+    description: "Duis cursus, mi quis viverra ornare eros dolor interdum nulla",
+  },
+  {
+    icon: "flaticon-lightbulb",
+    title: "Creative Design",
+    description: "Duis cursus, mi quis viverra ornare eros dolor interdum nulla",
+  },
+  {
+    icon: "flaticon-fast-delivery",
+    title: "Quick Linkup",
+    description: "Duis cursus, mi quis viverra ornare eros dolor interdum nulla",
+  },
+]);
 </script>

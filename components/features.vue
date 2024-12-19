@@ -57,8 +57,6 @@
     </div>
   </template>
   
-  <script>
 
-  </script>
 
   

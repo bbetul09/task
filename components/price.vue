@@ -52,43 +52,38 @@
     </div>
   </template>
   
-  <script>
-  export default {
-    data() {
-      return {
-        plans: [
-          {
-            name: "Standard",
-            price: "$49",
-            features: [
-              "Military Grade Server Protection",
-              "All Dashboard Features",
-              "API And Webhook Access",
-            ],
-          },
-          {
-            name: "Premium",
-            price: "$249",
-            features: [
-              "8 Team Members",
-              "Custom Analytics Filters",
-              "API And Webhook Access",
-            ],
-          },
-          {
-            name: "Professional",
-            price: "$99",
-            features: [
-              "Military Grade Server Protection",
-              "All Dashboard Features",
-              "API And Webhook Access",
-            ],
-          },
-        ],
-      };
-    },
-  };
-  </script>
+ <script setup>
+import { ref } from 'vue';
+const plans = ref([
+  {
+    name: "Standard",
+    price: "$49",
+    features: [
+      "Military Grade Server Protection",
+      "All Dashboard Features",
+      "API And Webhook Access",
+    ],
+  },
+  {
+    name: "Premium",
+    price: "$249",
+    features: [
+      "8 Team Members",
+      "Custom Analytics Filters",
+      "API And Webhook Access",
+    ],
+  },
+  {
+    name: "Professional",
+    price: "$99",
+    features: [
+      "Military Grade Server Protection",
+      "All Dashboard Features",
+      "API And Webhook Access",
+    ],
+  },
+]);
+</script>
   
  
   
